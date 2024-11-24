@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="18dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Add Quote"/>
+        <EditText
+            android:id="@+id/quoteFill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:hint="Enter Quote"
+            android:inputType="textMultiLine|textCapSentences"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/authorFill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:hint="Enter Author Name"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/languageFill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:hint="Enter Language"
+            android:inputType="textCapCharacters"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
